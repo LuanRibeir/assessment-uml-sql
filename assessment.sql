@@ -23,20 +23,6 @@ PRIMARY KEY (Codigo_Bolo),
 FOREIGN KEY (Id_Pedido) REFERENCES pedido(Id_Pedido)
 );
 
-CREATE TABLE IF NOT EXISTS bolo(
-Codigo_Bolo VARCHAR(6),
-Id_Pedido INT(6),
-Nome_Doce VARCHAR(20),
-Sabor_Doce VARCHAR(20),
-Kilo_Doce INT(10),
-ValorKg_Doce DECIMAL(10,2),
-Formato VARCHAR(20),
-Sabor_Cobertura VARCHAR(20),
-Camadas INT(2),
-PRIMARY KEY (Codigo_Bolo),
-FOREIGN KEY (Id_Pedido) REFERENCES pedido(Id_Pedido)
-);
-
 CREATE TABLE IF NOT EXISTS pudim(
 Codigo_Pudim VARCHAR(6),
 Id_Pedido INT(6),
